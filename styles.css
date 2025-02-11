@@ -1,0 +1,84 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 🛒 Barra de navegación con Flexbox 
+display: flex; → Activa Flexbox.
+justify-content: space-between; → El logo y el carrito quedan en los extremos.
+align-items: center; → Centra los elementos verticalmente.*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* 🎯 Diseño de productos con CSS Grid 
+display: grid; → Activa Grid Layout.
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); → Crea columnas que se ajustan automáticamente al tamaño de pantalla.*/
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* 📌 Sección del carrito con Flexbox 
+display: flex; → Activa Flexbox para organizar los productos agregados.
+flex-direction: column; → Organiza los productos en columnas.
+gap: 10px; → Añade espaciado uniforme entre los elementos.*/
+.carrito {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}

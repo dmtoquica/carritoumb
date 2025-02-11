@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 🛒 Barra de navegación con Flexbox -->
+    <nav class="navbar">
+        <h1>Mi Tienda</h1>
+        <div class="cart">
+            🛒 Carrito (<span id="cart-count">0</span>)
+        </div>
+    </nav>
+
+    <!-- 🎯 Sección de productos con CSS Grid -->
+    <section class="productos">
+        <div class="producto">
+            <img src="https://www.freepik.es/foto-gratis/retrato-modelo-piel-perfecta-maquillaje-brillante-grandes-labios-rosados-collar_9654679.htm#fromView=search&page=1&position=2&uuid=4771839c-4a86-4c39-a4a3-b8887d6a7354&query=maquillaje" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>$10</p>
+            <button onclick="agregarAlCarrito('Producto 1', 10)">Agregar</button>
+        </div>
+        <div class="producto">
+            <img src="https://www.freepik.es/vector-gratis/maquillaje-cartel-cosmetico_9398958.htm#fromView=search&page=1&position=3&uuid=4771839c-4a86-4c39-a4a3-b8887d6a7354&query=maquillaje" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>$15</p>
+            <button onclick="agregarAlCarrito('Producto 2', 15)">Agregar</button>
+        </div>
+        <div class="producto">
+            <img src="" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>$20</p>
+            <button onclick="agregarAlCarrito('Producto 3', 20)">Agregar</button>
+        </div>
+    </section>
+
+    <!-- 🛒 Sección del carrito con Flexbox -->
+    <section class="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-items" class="cart-items"></div>
+        <p><strong>Total: $<span id="total">0</span></strong></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
